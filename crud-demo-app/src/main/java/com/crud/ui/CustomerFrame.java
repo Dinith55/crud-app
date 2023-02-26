@@ -4,6 +4,12 @@
  */
 package com.crud.ui;
 
+import com.crud.businesslogic.CustomerLogic;
+import com.crud.model.CustomerBean;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author devzo
@@ -131,6 +137,25 @@ public class CustomerFrame extends javax.swing.JFrame {
         System.out.println("fname:"+fname);
         System.out.println("lname:"+lname);
         System.out.println("nic:"+nic);
+        
+        
+        
+        CustomerBean cusBean = new CustomerBean();
+        cusBean.setFname(fname);
+        cusBean.setLname(lname);
+        cusBean.setNic(nic);
+        
+        
+        
+        
+        try {
+            new CustomerLogic().addCustomer(cusBean);
+        } catch (SQLException ex) {
+            Logger.getLogger(CustomerFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
         
         
         
