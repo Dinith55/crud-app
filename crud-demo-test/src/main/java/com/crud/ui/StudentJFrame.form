@@ -53,11 +53,11 @@
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="btnstudent" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtnic" min="-2" pref="71" max="-2" attributes="0"/>
-                                      <Component id="txtlname" min="-2" pref="71" max="-2" attributes="0"/>
-                                      <Component id="txtfname" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <Component id="txtfname" alignment="0" pref="181" max="32767" attributes="0"/>
+                                      <Component id="txtlname" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtnic" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
