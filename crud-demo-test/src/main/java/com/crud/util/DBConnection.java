@@ -9,28 +9,33 @@ import java.sql.DriverManager;
 
 /**
  *
- * @author devzo
+ * @author Dinith
  */
 public class DBConnection {
-
-    public Connection getConnection() {
+    
+    public Connection getConnection(){
         Connection con = null;
-
+        
         try {
-
+            
             String url = "jdbc:mysql://localhost:3306/test_crud";
             String user = "root";
             String password = "123";
-
+            
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(url, user, password);
-            System.out.println("Db connected success....");
+            
+            
+            
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("something went wrong....");
         }
-
+        
+        
+        
+        
+        
         return con;
     }
-
+    
 }
